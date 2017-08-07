@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQ下拉</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-align: center;
+		}
+		li{
+			width: 70px;
+			height: 40px;
+			line-height: 40px;
+			background-color: lightblue;
+		}
+		.nav{
+			/* overflow: hidden; */
+			margin: 100px auto;
+		}
+		.nav-li{
+			border: 1px solid lightgray;
+			display: inline-block;
+			position: relative;
+		}
+		.slideDown{
+			display: none;
+			position: absolute;
+			top: 52px;
+		}
+		.
+	</style>
+	<script src='js/jquery.min.js'></script>
+</head>
+<body>
+	<ul class="nav">
+		<li class="nav-li">
+			<span>1</span>
+			<ul class="slideDown">
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+			</ul>
+		</li>
+		<li class="nav-li">
+			<span>1</span>
+			<ul class="slideDown">
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+			</ul>
+		</li>
+		<li class="nav-li">
+			<span>1</span>
+			<ul class="slideDown">
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+			</ul>
+		</li>
+		<li class="nav-li">
+			<span>1</span>
+			<ul class="slideDown">
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+			</ul>
+		</li>
+	</ul>
+
+	<script type="text/javascript">
+		$('.nav-li').hover(function(){
+			$(this).find('.slideDown').stop().slideToggle(100);
+		})
+	</script>
+</body>
+</html>
